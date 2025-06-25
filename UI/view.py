@@ -34,8 +34,8 @@ class View(ft.UserControl):
         self._page.controls.append(row1)
 
         #ROW2
-        self._ddAlbum = ft.Dropdown(label="Album", on_change=self._controller.getSelectedAlbum)
-        self._btnAnalisiComp = ft.ElevatedButton(text = "Analisi Componente.",
+        self._ddAlbum = ft.Dropdown(label="Album")
+        self._btnAnalisiComp = ft.ElevatedButton(text = "Analisi Componente",
                                                  on_click=self._controller.handleAnalisiComp)
 
         row2 = ft.Row([
